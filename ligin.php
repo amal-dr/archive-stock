@@ -2,7 +2,7 @@
 <?php
 session_start();
 require "connection.php"; // Ensure this file exists and contains PDO connection code
-
+require "index.html";
 if (isset($_POST["ok"])) {
     $cin = $_POST["cin"];
     $matricule = $_POST["matricule"];

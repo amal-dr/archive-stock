@@ -19,9 +19,11 @@ if (isset($_POST["ok"])) {
             exit();
         } else {
             echo "<div class='alert alert-danger mt-3'>CIN or Matricule incorrect.</div>";
+            header('Location: index.html');
         }
     } else {
         echo "<script>alert('Please fill in all fields.')</script>";
+        header('Location: index.html');
     }
 }
 ?>
